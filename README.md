@@ -21,8 +21,8 @@
   </p>
 </p>
 
-### About the bot
-Rita is a bot for simple use and only responds to the owner! Rita is your bot helper, created in Discord.JS v12 this bot tries to be lightweight and fast. Some of the features are an AI chatbot, text tags, image tags, and simple [music commands](https://github.com/eritislami/evobot).
+### About
+Rita is your bot helper with simple to use commands and only responds to the owner. Created in Discord.JS v12 this bot is lightweight and fast. Some features include: AI chat, text tags, [music commands](https://github.com/eritislami/evobot), and more!
 
 ***Note:*** Due to the existence of text/image tags, the bot cannot be hosted on [Heroku](http://heroku.com/), my version is hosted on a Raspberry Pi Zero W.
 
@@ -33,8 +33,7 @@ Rita is a bot for simple use and only responds to the owner! Rita is your bot he
 ![TEXT_TAGS](assets/text_tags.gif)
 
 ### How to Use
-***Note:*** This bot's code complexity not meant for beginners and might be confusing, if you do not understand how it works I will be glad to help, just contact me on Discord
-[Kurasad#2521](https://discord.com/users/476812566530883604), but if you do not understand anything this might not be the bot for you, yet.
+***NOTE:*** This bot's complexity of the code is not meant for beginners and might be confusing. But if you do not know how it works, I will gladly help you. (Discord: [Kurasad#2521](https://discord.com/users/476812566530883604)). This bot is made for advanced programmers; if you cannot understand anything about this bot, it might not be the right fit for you.
 
 After forking the project add the proper information for the following files.
 
@@ -81,3 +80,15 @@ run `npm i` and then `node rita.js`
 Feedback is an amazing thing and feature additions are awesome, but to keep this bot simple I will try to only accept requests that do not change the bot much or majorly impact the speed.
 
 I am the bot creator of [Jonin](https://top.gg/bot/662517805983334416) and after many requests wanted to make a simpler bot for public use.
+
+
+## Command list as of August 09, 2020
+### I will be settting the prefix to mine (`rita pls`) in the table below
+
+| Generl |
+|--------|
+| `rita pls` about <br /> `rita pls` ask <br /> `rita pls` debug <br /> `rita pls` eval <br /> `rita pls` explain <br /> `rita pls` help <br /> `rita pls` img <br /> `rita pls` ping <br /> `rita pls` tag <br /> `rita pls` uptime |
+
+| Music |
+|-------|
+| `rita pls` loop <br /> `rita pls` np <br /> `rita pls` pause <br /> `rita pls` play <br /> `rita pls` queue <br /> `rita pls` remove <br /> `rita pls` resume <br /> `rita pls` search <br /> `rita pls` shuffle <br /> `rita pls` skip <br /> `rita pls` stop <br /> `rita pls` volume |
