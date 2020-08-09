@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://github.com/DPulavarthy/rita" target="_blank">
-    <img src="https://i.imgur.com/Nmz3qNH.jpg" alt="Logo">
+    <img src="assets/rita.png" alt="Logo">
     <a href="https://www.pixiv.net/en/users/6831531">Credit to the artist</a>
   </a>
 
@@ -26,6 +26,11 @@ Rita is a bot for simple use and only responds to the owner! Rita is your bot he
 
 ***Note:*** Due to the existence of text/image tags, the bot cannot be hosted on [Heroku](http://heroku.com/), my version is hosted on a Raspberry Pi Zero W.
 
+### Image tags
+![IMG_TAGS](assets/img_tags.gif)
+
+### Text tags
+![TEXT_TAGS](assets/text_tags.gif)
 
 ### How to Use
 ***Note:*** This bot's code complexity not meant for beginners and might be confusing, if you do not understand how it works I will be glad to help, just contact me on Discord
