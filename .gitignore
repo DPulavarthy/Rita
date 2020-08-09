@@ -1,0 +1,8 @@
+# Files
+.env
+package-lock.json
+util.js
+
+# Folders
+node_modules
+data
