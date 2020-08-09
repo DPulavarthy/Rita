@@ -1,5 +1,5 @@
 module.exports = async (message) => {
-    // if (message.author.id !== message.client.owner.id) return;
+    if (message.author.id !== message.client.owner.id) return;
     if (message.content.toLowerCase() === `${message.client.user.username.toLowerCase()}?` || (message.channel.type !== `dm` && message.content.toLowerCase() === `${message.guild.members.cache.get(message.client.user.id).displayName.toLowerCase()}?`)) { return message.channel.send(`**${message.client.user.username} online, serving ${message.client.owner.username} with prefix \`${message.client.prefix}\`**`); };
     if (message.content === `(╯°□°）╯︵ ┻━┻`) { message.channel.send(`┬─┬ ノ( ゜-゜ノ)`); };
     if (message.content.toLowerCase().startsWith(message.client.prefix)) {
