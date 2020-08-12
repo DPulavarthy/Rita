@@ -81,6 +81,7 @@ Feedback is an amazing thing and feature additions are awesome, but to keep this
 
 I am the bot creator of [Jonin](https://top.gg/bot/662517805983334416) and after many requests wanted to make a simpler bot for public use.
 
+If you understand this code, amazing.. come [hangout](https://discord.gg/H5PwwSJ) with me or help me develop [Jonin](https://top.gg/bot/662517805983334416/)
 
 ## Command list as of August 09, 2020
 ### I will be settting the prefix to mine (`rita pls`) in the table below
