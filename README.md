@@ -3,7 +3,6 @@
 <p>
   <a href="https://github.com/DPulavarthy/rita" target="_blank">
     <img src="assets/rita.png" alt="Logo">
-    <a href="https://www.pixiv.net/en/users/6831531">Credit to the artist</a>
   </a>
 
   <h3 align="center"> Rita </h3>
