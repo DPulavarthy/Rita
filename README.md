@@ -85,8 +85,8 @@ If you understand this code, amazing.. come [hangout](https://discord.gg/H5PwwSJ
 ## Command list as of August 09, 2020
 ### I will be settting the prefix to mine (`rita pls`) in the table below
 
-| Generl |
-|--------|
+| General |
+|---------|
 | `rita pls` about <br /> `rita pls` ask <br /> `rita pls` debug <br /> `rita pls` eval <br /> `rita pls` explain <br /> `rita pls` help <br /> `rita pls` img <br /> `rita pls` ping <br /> `rita pls` tag <br /> `rita pls` uptime |
 
 | Music |
