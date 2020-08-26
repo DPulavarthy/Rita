@@ -10,9 +10,11 @@
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.6",
+    "google-spreadsheet": "^3.0.11",
     "moment": "^2.27.0",
     "moment-duration-format": "^2.3.2",
     "node-fetch": "^2.6.0",
+    "owofi": "^1.0.1",
     "simple-youtube-api": "^5.2.1",
     "systeminformation": "^4.26.10",
     "ytdl-core": "^3.2.0",
@@ -24,7 +26,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DPulavarthy/rita.git"
+    "url": "git+https://github.com/DPulavarthy/rita.git",
+    "src": "https://github.com/DPulavarthy/rita"
   },
   "author": "Kurasad#2521",
   "license": "ISC",
