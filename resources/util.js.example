@@ -3,6 +3,7 @@ module.exports = {
         id: "OWNER_DISCORD_ID",
         link: "OWNER_SOCIAL_LINK",
         site: "OWNER_WEBSITE_LINK",
+        playlist: "PRESET_YOUTUBE_PLAYLIST_LINK"
     },
     main: "#MAIN_EMBED_COLOR_HEX",
     failed: "#FF0000",
