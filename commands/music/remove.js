@@ -4,8 +4,7 @@ module.exports.run = async (client, message, args) => {
   if (member.voice.channel !== member.guild.me.voice.channel) return message.channel.send(client.comment(`You need to be in the same voice channel as the bot!`));
   if (!args.length || isNaN(args[0])) return client.src.invalid(message);
   const song = queue.songs.splice(args[0] - 1, 1);
-  queue.textChannel.send(client.comment(`❌ removed '${song[0].title}' from the queue.`));
-  return client.log(message);
+  return queue.textChannel.send(client.comment(`${String.fromCodePoint(10060)} removed \"${song[0].title}\" from the queue.`));
 }
 
 module.exports.code = {

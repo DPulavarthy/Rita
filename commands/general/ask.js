@@ -1,10 +1,10 @@
 module.exports.run = async (client, message, args) => {
-    if (!args.join(` `)) { return client.src.invalid(message); }
+    if (!args.join(` `)) { return client.src.invalid(message); };
     message.channel.startTyping(true);
-    let alexa = require(`alexa-bot-api`), ai = new alexa(client.util.key.alexa);
-    ai.getReply(args.join(` `)).then(reply => { message.channel.send(reply); });
-    message.channel.stopTyping(true);
-    return client.log(message);
+    let alexa = require(`alexa-bot-api`);
+    let owo = false;
+    if (args[0].toLowerCase() === `owo`) { args.shift(); owo = !owo; };
+    new alexa(client.util.key.alexa).getReply(args.join(` `)).then(reply => { return message.channel.send(`> ${args.join(` `)}\n${owo ? require(`owofi`)(reply) : reply}`); });
 }
 
 module.exports.code = {

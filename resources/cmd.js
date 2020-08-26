@@ -3,7 +3,7 @@ module.exports = async (client, time) => {
     let Discord = require(`discord.js`), count = 0, approved = 0, broken = [];
     client.commands = new Discord.Collection();
     client.aliases = new Discord.Collection();
-    console.log(`[SYSTEM]: Loading Commands!`.brightGreen);
+    console.log(`[SYSTEM]: [${((new Date().getTime() - time) / 1000).toFixed(2)}s] Loading Commands!`.brightGreen);
     for await (let dir of require(`fs`).readdirSync(`./commands/`)) {
         const commands = require(`fs`).readdirSync(`./commands/${dir}/`).filter(file => file.split(`.`).pop() === `js`);
         for (let file of commands) {
@@ -15,5 +15,5 @@ module.exports = async (client, time) => {
             } else { count++; broken.push(file); continue; };
         }
     }
-    console.log(`${`[SYSTEM]: Successfully Loaded ${approved}/${count} Commands!`.brightGreen}${broken.length > 0 ? `\n[ERROR!]: Failed To Load: ${broken.join(`, `)}`.red : ``}`);
+    console.log(`${`[SYSTEM]: [${((new Date().getTime() - time) / 1000).toFixed(2)}s] Successfully Loaded ${approved}/${count} Commands!`.brightGreen}${broken.length > 0 ? `\n[ERROR!]: Failed To Load: ${broken.join(`, `)}`.red : ``}`);
 }

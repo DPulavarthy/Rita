@@ -4,8 +4,7 @@ module.exports.run = async (client, message) => {
   if (member.voice.channel !== member.guild.me.voice.channel) return message.channel.send(client.comment(`You need to be in the same voice channel as the bot!`));
   queue.playing = true;
   queue.connection.dispatcher.end();
-  queue.textChannel.send(client.comment(`Skipped the track`));
-  return client.log(message);
+  return queue.textChannel.send(client.comment(`Skipped the track`));
 }
 
 module.exports.code = {

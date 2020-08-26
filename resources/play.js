@@ -1,11 +1,11 @@
 module.exports = async (song, message) => {
   const queue = message.client.queue.get(message.guild.id);
-  if (!song) { queue.channel.leave(); message.client.queue.delete(message.guild.id); return queue.textChannel.send(message.client.comment(`🚫 Music queue ended.`)).catch(console.error); };
+  if (!song) { queue.channel.leave(); message.client.queue.delete(message.guild.id); return queue.textChannel.send(message.client.comment(`${String.fromCodePoint(128683)} Music queue ended.`)).catch(console.error); };
   let stream = null, streamType = song.url.includes(`youtube.com`) ? `opus` : `ogg/opus`;
   try { stream = await require(`ytdl-core-discord`)(song.url, { highWaterMark: 1 << 25 }); }
   catch (error) {
     if (queue) { queue.songs.shift(); module.exports(queue.songs[0], message); };
-    console.error(error); 
+    console.error(error);
     return message.channel.send(`Error: ${error.message ? error.message : error}`);
   }
   queue.connection.on(`disconnect`, () => message.client.queue.delete(message.guild.id));

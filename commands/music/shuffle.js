@@ -6,8 +6,7 @@ module.exports.run = async (client, message) => {
   for (let i = songs.length - 1; i > 1; i--) { let j = 1 + Math.floor(Math.random() * i);[songs[i], songs[j]] = [songs[j], songs[i]]; };
   queue.songs = songs;
   message.client.queue.set(message.guild.id, queue);
-  queue.textChannel.send(client.comment(`Queue has been shuffled`));
-  return client.log(message);
+  return queue.textChannel.send(client.comment(`Queue has been shuffled`));
 }
 
 module.exports.code = {
