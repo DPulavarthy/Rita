@@ -31,6 +31,10 @@ Rita is your bot helper with simple to use commands and only responds to the own
 ### Text tags
 ![TEXT_TAGS](assets/text_tags.gif)
 
+### Logs
+Rita logs command use in a clear way with the runtime for each command in seconds
+![TEXT_TAGS](assets/logs.png)
+
 ### How to Use
 ***NOTE:*** This bot's complexity of the code is not meant for beginners and might be confusing. But if you do not know how it works, I will gladly help you. (Discord: [Kurasad#2521](https://discord.com/users/476812566530883604)). This bot is made for advanced programmers; if you cannot understand anything about this bot, it might not be the right fit for you.
 
@@ -51,6 +55,7 @@ module.exports = {
         id: "OWNER_DISCORD_ID",
         link: "OWNER_SOCIAL_LINK",
         site: "OWNER_WEBSITE_LINK",
+        playlist: "PRESET_YOUTUBE_PLAYLIST_LINK"
     },
     main: "#MAIN_EMBED_COLOR_HEX",
     failed: "#FF0000",
@@ -82,13 +87,13 @@ I am the bot creator of [Jonin](https://top.gg/bot/662517805983334416) and after
 
 If you understand this code, amazing.. come [hangout](https://discord.gg/H5PwwSJ) with me or help me develop [Jonin](https://top.gg/bot/662517805983334416/)
 
-## Command list as of August 09, 2020
+## Command list as of August 26, 2020
 ### I will be settting the prefix to mine (`rita pls`) in the table below
 
 | General |
 |---------|
-| `rita pls` about <br /> `rita pls` ask <br /> `rita pls` debug <br /> `rita pls` eval <br /> `rita pls` explain <br /> `rita pls` help <br /> `rita pls` img <br /> `rita pls` ping <br /> `rita pls` tag <br /> `rita pls` uptime |
+| `rita pls` about <br /> `rita pls` ask <br /> `rita pls` debug <br /> `rita pls` directory <br /> `rita pls` eval <br /> `rita pls` explain <br /> `rita pls` help <br /> `rita pls` img <br /> `rita pls` ping <br /> `rita pls` tag <br /> `rita pls` uptime |
 
 | Music |
 |-------|
-| `rita pls` loop <br /> `rita pls` np <br /> `rita pls` pause <br /> `rita pls` play <br /> `rita pls` queue <br /> `rita pls` remove <br /> `rita pls` resume <br /> `rita pls` search <br /> `rita pls` shuffle <br /> `rita pls` skip <br /> `rita pls` stop <br /> `rita pls` volume |
+| `rita pls` loop <br /> `rita pls` np <br /> `rita pls` pause <br /> `rita pls` play <br /> `rita pls` preset <br /> `rita pls` queue <br /> `rita pls` remove <br /> `rita pls` resume <br /> `rita pls` search <br /> `rita pls` shuffle <br /> `rita pls` skip <br /> `rita pls` stop <br /> `rita pls` volume |
