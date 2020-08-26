@@ -3,7 +3,7 @@ module.exports.run = async (client, message) => {
     let embed = client.embed()
         .setAuthor(`About ${client.user.tag}`)
         .setDescription(`I am a Discord bot make to serve and only respond to [${client.owner.tag}](${client.util.owner.link})\nI have served ${client.owner.username} ${cmds} times!`)
-        .setImage(`https://i.imgur.com/xakVjck.webp`)
+        .setImage(`https://i.imgur.com/H1aB73F.png`)
     return message.channel.send(embed);
 }
 
