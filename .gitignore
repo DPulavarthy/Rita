@@ -4,5 +4,5 @@ package-lock.json
 util.js
 
 # Folders
-node_modules
-data
+/node_modules
+/data
