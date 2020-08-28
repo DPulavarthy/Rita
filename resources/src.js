@@ -30,7 +30,6 @@ module.exports = {
             let counts = require(`../data/text/counts.json`);
             counts.status = new Date().toISOString();
             require(`fs`).writeFile(`./data/text/counts.json`, JSON.stringify(counts), 'utf8', function (error) { if (error) { throw error; }; });
-            delete require.cache[require.resolve(`../data/text/counts.json`)];
         }
     },
 }
