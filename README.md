@@ -101,7 +101,7 @@ If you understand this code, amazing.. come [hangout](https://discord.gg/H5PwwSJ
 
 # Guides below 👇
 
-## Need help getting a bot token?
+## Need help getting a bot token? (Made on October 12, 2020)
 
 ### Step 1: Discord Developer Portal
 Go to the [Discord Developer Portal](https://discord.com/developers/applications) and either make a new application or pick the application that you want to use for this bot.
@@ -115,7 +115,11 @@ Once an application is chosen, direct yourself to the `Bot` tab, this is where y
 After you read the popup and agree by clicking `Yes, do it!`, you will have a bot to use. Copy the token field of the new bot by either clicking on the `Copy` field or clicking on `Click to Reveal Token` and copying the string.
 ![Bot Token Step 3](assets/bot-token-step-3.png)
 
-## Need help getting your User ID?
+### Step 4: Putting it on the bot
+The last thing to do is to put it on the bot, to do this open the `.env` file found at `./.env`, paste the token in the `TOKEN=` field.
+![Bot Token Step 4](assets/bot-token-step-4.png)
+
+## Need help getting your User ID? (Made on October 12, 2020)
 
 ### Step 1: Go to Discord
 Start by going to [Discord](https://discord.com)'s website and logging in with the account that you want the bot to respond to. Then click on your user settings icon.
@@ -125,10 +129,32 @@ Start by going to [Discord](https://discord.com)'s website and logging in with t
 Direct yourself to the `Appearence` Tab in settings and scroll down to view and toggle the `Developer Mode` setting if not already done.
 ![User ID Step 2](assets/user-id-step-2.png)
 
-## Step 3: Getting the ID
+### Step 3: Getting the ID
 After the `Developer Mode` has been enabled, you can close the setting by clicking the `X` icon in the top right or using the `esc` key on your keyboard.
 Now right click on your user, and click on `Copy ID`, this is the ID that you want to put into the `id` field of the `util.js` file located in `./resources/util.js`
 ![User ID Step 3](assets/user-id-step-3.png)
 
-## Need help getting a Google API key?
-...
+## Need help getting a Google API key? (Made on October 12, 2020)
+
+### Step 1: Go to the Developer Console
+Visit [Google's API Dashboard](https://console.developers.google.com) and create a new application, or choose an application that you have already created for this bot.
+![Google API Step 1](assets/google-api-step-1.png)
+
+### Step 2: Create the project
+Give the project a name and then click on the `Create` button to make the project.
+![Google API Step 2](assets/google-api-step-2.png)
+
+### Step 3: Enabing the API
+Once the project is created make sure you are currently viewing the information for that project. Then click on `+ Enable APIs and Services` to search for the `YouTube Data API v3`
+![Google API Step 3: Img 1](assets/google-api-step-3-img-1.png)
+
+When you find the Data API for YouTube, click on it.
+![Google API Step 3: Img 2](assets/google-api-step-3-img-2.png)
+
+You need to enable this API for the bot to get access to it.
+![Google API Step 3: Img 3](assets/google-api-step-3-img-3.png)
+
+### Step 4: Getting the API Key
+Go to the credentials tab once the API has been enabled. Then click on `+ Create Credentials` > `API Key`.
+![Google API Step 4](assets/google-api-step-4.png)
+You should now be able to see a popup with a key, copy that key and put it into the `google` field of the `util.js` file located in `./resources/util.js`
