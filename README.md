@@ -47,7 +47,7 @@ TOKEN=DISCORD_BOT_TOKEN
 PREFIX=DISCORD_BOT_PREFIX
 ```
 
-Fill in with the proper information (Go to the [Discord Developer Portal](https://discord.com/developers/applications) and get a bot token), The prefix checks for args instead of characters so use a prefix such as `rita pls` instead of `!r` [Need help getting a token?]()
+Fill in with the proper information (Go to the [Discord Developer Portal](https://discord.com/developers/applications) and get a bot token), The prefix checks for args instead of characters so use a prefix such as `rita pls` instead of `!r` [Need help getting a token?](https://github.com/DPulavarthy/rita#need-help-getting-a-bot-token)
 Once the `.env` file is properly filled out open the following directory `./resources/util.js.example`
 
 Fill out the information with the required data
@@ -69,8 +69,8 @@ module.exports = {
     }
 }
 ```
-[Need help getting your User ID?]()
-[Need help getting a Google API key?]()
+[Need help getting your User ID?](https://github.com/DPulavarthy/rita#need-help-getting-your-user-id) or [Need help getting a Google API key?](https://github.com/DPulavarthy/rita#need-help-getting-your-user-id)
+
 ⚠️***NOTE:*** The Alexa API key is a public key from [NPM alexa-bot-api](https://www.npmjs.com/package/alexa-bot-api)
 
 ⚠️***NOTE:*** The owner id is important, without it the bot will not respond to anyone. Remember, this is a private bot so it will only respond to the owner
@@ -101,8 +101,34 @@ If you understand this code, amazing.. come [hangout](https://discord.gg/H5PwwSJ
 
 # Guides below 👇
 
-# Need help getting a bot token?
+## Need help getting a bot token?
 
-# Need help getting your User ID?
+### Step 1: Discord Developer Portal
+Go to the [Discord Developer Portal](https://discord.com/developers/applications) and either make a new application or pick the application that you want to use for this bot.
+![Bot Token Step 1](assets/bot-token-step-1.png)
 
-# Need help getting a Google API key?
+### Step 2: Making the bot
+Once an application is chosen, direct yourself to the `Bot` tab, this is where you can create a bot to add to your server.
+![Bot Token Step 2](assets/bot-token-step-2.png)
+
+### Step 3: Getting the token
+After you read the popup and agree by clicking `Yes, do it!`, you will have a bot to use. Copy the token field of the new bot by either clicking on the `Copy` field or clicking on `Click to Reveal Token` and copying the string.
+![Bot Token Step 3](assets/bot-token-step-3.png)
+
+## Need help getting your User ID?
+
+### Step 1: Go to Discord
+Start by going to [Discord](https://discord.com)'s website and logging in with the account that you want the bot to respond to. Then click on your user settings icon.
+![User ID Step 1](assets/user-id-step-1.png)
+
+### Step 2: Enable Developer Mode
+Direct yourself to the `Appearence` Tab in settings and scroll down to view and toggle the `Developer Mode` setting if not already done.
+![User ID Step 2](assets/user-id-step-2.png)
+
+## Step 3: Getting the ID
+After the `Developer Mode` has been enabled, you can close the setting by clicking the `X` icon in the top right or using the `esc` key on your keyboard.
+Now right click on your user, and click on `Copy ID`, this is the ID that you want to put into the `id` field of the `util.js` file located in `./resources/util.js`
+![User ID Step 3](assets/user-id-step-3.png)
+
+## Need help getting a Google API key?
+...
