@@ -47,7 +47,8 @@ TOKEN=DISCORD_BOT_TOKEN
 PREFIX=DISCORD_BOT_PREFIX
 ```
 
-Fill in with the proper information (Go to the [Discord Developer Portal](https://discord.com/developers/applications) and get a bot token), The prefix checks for args instead of characters so use a prefix such as `rita pls` instead of `!r` [Need help getting a token?](https://github.com/DPulavarthy/rita#need-help-getting-a-bot-token)
+Fill in with the proper information (Go to the [Discord Developer Portal](https://discord.com/developers/applications) and get a bot token), The prefix checks for args instead of characters so use a prefix such as `rita pls` instead of `!r` [Need help getting a token?](https://github.com/DPulavarthy/rita#need-help-getting-a-bot-token-made-on-october-12-2020)
+
 Once the `.env` file is properly filled out open the following directory `./resources/util.js.example`
 
 Fill out the information with the required data
@@ -69,7 +70,7 @@ module.exports = {
     }
 }
 ```
-[Need help getting your User ID?](https://github.com/DPulavarthy/rita#need-help-getting-your-user-id) or [Need help getting a Google API key?](https://github.com/DPulavarthy/rita#need-help-getting-your-user-id)
+[Need help getting your User ID?](https://github.com/DPulavarthy/rita#need-help-getting-your-user-id-made-on-october-12-2020) or [Need help getting a Google API key?](https://github.com/DPulavarthy/rita#need-help-getting-a-google-api-key-made-on-october-12-2020)
 
 ⚠️***NOTE:*** The Alexa API key is a public key from [NPM alexa-bot-api](https://www.npmjs.com/package/alexa-bot-api)
 
