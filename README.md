@@ -9,7 +9,7 @@
   <p align="center">
     A Discord bot with some cool features
     <br />
-    <a href="https://kura.gq"><strong> Visit the owner » </strong></a>
+    <a href="https://kura.gq"><strong> Visit the creator » </strong></a>
     <br />
     <br />
     <a href="https://support.jonin.gq"> Contact </a>
