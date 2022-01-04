@@ -1,48 +1,21 @@
-require("dotenv").config();
-require("colors");
-require("./resources/required")();
-const { Client, Collection, Intents: { FLAGS }, Options: { cacheWithLimits } } = require(`discord.js`),
-    [messageCreate, interactionCreate] = [
-        require("./events/message"),
-        require("./events/interactionCreate")
-    ]
+require('dotenv').config()
 
-class Meronpan extends Client {
+Array.exists = i => Array.isArray(i) && i.some(e => e)
+Object.mergify = (m, ...s) => { s.map(o => Object.keys(o).map(k => m[k] = o[k])); return m }
+
+const [{ Client, Intents: { FLAGS }, Options: { cacheWithLimits } }, { readdirSync }] = ['discord.js', 'fs'].map(m => require(m))
+
+require("colors");
+class Rosemary extends Client {
     constructor() {
         super({
-            intents: [
-                FLAGS.GUILDS,
-                FLAGS.GUILD_MEMBERS,
-                FLAGS.GUILD_MESSAGES,
-                FLAGS.GUILD_MESSAGE_REACTIONS
-            ],
-            restTimeOffset: 100, // Lowers the time needed for requests, for example reactions
-            makeCache: cacheWithLimits({
-                MessageManager: {
-                    maxSize: 200,
-                    sweepInterval: 5 * 60000
-                }
-            }),
-            presence: {
-                status: "dnd",
-                activities: [
-                    { name: "you", type: "WATCHING" }
-                ]
-            }
+            restTimeOffset: 100,
+            intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS'].map(i => FLAGS[i]),
+            makeCache: cacheWithLimits({ MessageManager: { maxSize: 200, sweepInterval: 5 * 60000 } })
         })
-
-        this.src = require("./resources/src")
-
-        this.on("ready", () => this.src.startup([this]))
-        this.on("messageCreate", m => messageCreate(this, m))
-        this.on("interactionCreate", i => interactionCreate(this, i))
-
-        for (const name of ["commands", "devcommands"]) this[name] = new Collection()
-        for (const name of ["loader", "command"]) require(`./handler/${name}`)(this);
-
-        this.login(process.env.TOKEN)
-            .catch(e => this.error(`[DISCORD:CONNECTION:ERROR]: `.red, e));
+        for (let event of readdirSync(`./events`)) this.on(event.replace(/\.js/g, ''), (...params) => new (require(`./events/${event}`))(this, ...params))
+        this.login(process.env.TOKEN).catch(error => { throw new ReferenceError(error) })
     }
 }
 
-global.Client = new Meronpan()
+global.Client = new Rosemary()
