@@ -1,38 +1,20 @@
 {
-  "name": "rita",
+  "name": "rosemary",
   "version": "1.0.0",
-  "description": "Kura's Personal Bot",
-  "main": "rita.js",
-  "dependencies": {
-    "@discordjs/opus": "^0.3.2",
-    "alexa-bot-api": "^0.1.3",
-    "colors": "^1.4.0",
-    "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0",
-    "ffmpeg-static": "^4.2.6",
-    "google-spreadsheet": "^3.0.11",
-    "moment": "^2.27.0",
-    "moment-duration-format": "^2.3.2",
-    "node-fetch": "^2.6.0",
-    "owofi": "^1.0.1",
-    "simple-youtube-api": "^5.2.1",
-    "systeminformation": "^4.26.10",
-    "ytdl-core": "^3.2.0",
-    "ytdl-core-discord": "^1.2.1"
-  },
-  "devDependencies": {},
+  "description": "Your personal bot helper",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "rita?"
+    "prestart": "npx tsc",
+    "start": "node ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DPulavarthy/rita.git",
-    "src": "https://github.com/DPulavarthy/rita"
+  "author": "Dhanush Pulavarthy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1",
+    "node-fetch": "^2.6.2"
   },
-  "author": "Kurasad#2521",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DPulavarthy/rita/issues"
-  },
-  "homepage": "https://github.com/DPulavarthy/rita#readme"
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
 }
